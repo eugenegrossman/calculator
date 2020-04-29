@@ -1,5 +1,5 @@
 .container{
-    max-width: 700px;
+    max-width: 600px;
     overflow-y: auto;
     display: flex; 
     position: relative;
@@ -18,25 +18,41 @@
     text-align: center;
     border: solid rgb(95, 95, 100) .5px; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     float: left;
     margin: 5px;
     } 
 
     .btn:hover{
-    background-color: rgb(150, 27, 27);
-    color: white;
-    font-size: 24px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    border: solid rgb(95, 95, 100) .5px; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 150px;
-    height: 150px;
-    float: left;
-    margin: 5px;
+        background-color: rgb(150, 27, 27);
+        color: white;
+        font-size: 24px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        border: solid rgb(95, 95, 100) .5px; 
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 5px;
+    }
+
+    .display{
+        max-width: 500px;
+        color: rgb(102, 101, 101);
+        overflow-y: auto;
+        display: flex; 
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 5px;
+        padding: 12px 24px;
+        background-color: rgba(196, 189, 189, 0.767);
+        border: solid rgb(95, 95, 100) .5px; 
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
