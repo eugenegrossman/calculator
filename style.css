@@ -13,7 +13,7 @@ html{
     min-height: 450px;
     width: 50vh;
     height: 50vh; 
-    gap: 10px; 
+    gap: 2.5px; 
     text-align: center;
     border-radius: 10px;
     padding: 10px;
@@ -60,14 +60,18 @@ html{
         background-color: rgba(196, 189, 189, 0.767);
         border: solid rgb(95, 95, 100) .5px; 
         border-bottom: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         grid-column: 1/4;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         overflow: hidden;
         text-align: left;
-        font-size: smaller;
+        font-size: 15px;
         min-height: 10px;
         user-select: text;
-        padding: 10px;
+        padding-left: 10px;
+        padding-right:10px;
+        padding-top: 10px;
         }
 
 
@@ -77,15 +81,18 @@ html{
         background-color: rgba(196, 189, 189, 0.767);
         border: solid rgb(95, 95, 100) .5px; 
         border-top: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         grid-column: 1/4;
         padding-bottom: 30px;
         overflow: hidden;
         text-align: left;
-        font-size: large;
+        font-size: 20px;
         min-height: 30px;
         margin-top: -10px;
         user-select: text;
         padding: 10px;
+        
         /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     }
 
@@ -93,5 +100,5 @@ html{
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 2.5px;
     }
