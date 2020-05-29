@@ -16,7 +16,7 @@ html{
     gap: 2.5px; 
     text-align: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 70px;
     user-select: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -84,7 +84,7 @@ html{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         grid-column: 1/4;
-        padding-bottom: 30px;
+        padding-top: 0;
         overflow: hidden;
         text-align: left;
         font-size: 20px;
@@ -99,6 +99,6 @@ html{
     .operators{
         grid-column: 1/4;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2.5px;
     }

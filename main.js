@@ -25,7 +25,6 @@ operators.forEach((button) => {
 clear.addEventListener('click',clearDisplay)
 cancel.addEventListener('click', cancelDisplay)
 equals.addEventListener('click',operate)
-// bigcontainer.addEventListener('mousemove', shadow)
 window.addEventListener('keydown',keyboardpressing)
 
 function keyboardpressing () {
@@ -111,7 +110,7 @@ function keyboardpressing () {
         if (displayValue === result) {
             displayValue = ''
         }
-        displayValue +=  this.innerText    
+        displayValue +=  this.innerText   
         updateDisplay()    
     }
 
@@ -178,7 +177,7 @@ function operate () {
         return
     }
     if (displayValue.match(': 0')){
-        alert('SNARKY ERROR MESSAGE')
+        alert('ERROR')
         return
     }
     
@@ -203,21 +202,4 @@ function operate () {
 
 function getMathematicalValue(str) {
     return new Function('return ' + str)();    
-}
-
-function shadow (e) {
-    const width = bigcontainer.offsetWidth
-    const height = bigcontainer.offsetHeight
-    let x = e.offsetX;
-    let y = e.offsetY;
-    
-    
-    if (this !== e.target) {
-        x = x + e.target.offsetLeft
-        y = y + e.target.offsetTop
-    }
-    
-    const xPasso = (x / width * 30) - (30/2)
-    const yPasso = (y / height * 30) - (30/2)
-    divcontainer.style.boxShadow = `${xPasso}px ${yPasso}px 20px #808080`    
 }
